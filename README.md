@@ -19,7 +19,7 @@ TypeScript/ESM:
 ```typescript
 import Client from "@polyscale/serverless-js";
 
-const polyscale = new Client("https://http.polyscale.global", {
+const polyscale = new Client("https://serverless.aws.psedge.global", {
     cacheId: "polyscale-cache-id",
     username: "target-db-username",
     password: "target-db-password",
@@ -34,7 +34,7 @@ Commonjs:
 ```javascript
 const Client = require("@polyscale/serverless-js");
 
-const polyscale = new Client("https://http.polyscale.global", {
+const polyscale = new Client("https://serverless.aws.psedge.global", {
     cacheId: "polyscale-cache-id",
     username: "target-db-username",
     password: "target-db-password",
