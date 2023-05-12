@@ -17,7 +17,7 @@ export class Client {
   ) {
     if (!fetchFn) {
       console.log(
-        "Defaulting to use fetch. Provide fetchFn to override default behaviour."
+        "@polyscale/serverless-js – defaulting to use fetch. Provide fetchFn to override default behaviour."
       );
     }
 
