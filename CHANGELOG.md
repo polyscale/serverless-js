@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://github.com/polyscale/serverless-js/compare/v0.0.6-2...v0.0.6) (2023-05-12)
+
+
+### Bug Fixes
+
+* throw error if fetch is undefined and no fetchFn provided ([0d59df4](https://github.com/polyscale/serverless-js/commit/0d59df40f637b06c70d716046ce5d9bba201f2d9))
+
 ### [0.0.6-2](https://github.com/polyscale/serverless-js/compare/v0.0.6-1...v0.0.6-2) (2023-05-12)
 
 
