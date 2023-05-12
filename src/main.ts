@@ -9,9 +9,25 @@ export class Client {
     private connection: Pick<
       typeof models.SqlQueryRequest._type,
       "cacheId" | "username" | "password" | "database" | "provider"
-    >
+    >,
+    fetchFn?: (
+      input: RequestInfo | URL,
+      init?: RequestInit | undefined
+    ) => Promise<Response>
   ) {
-    this.request = makeRequest(endpoint + "/sql");
+    if (!fetchFn) {
+      console.log(
+        "Defaulting to use global.fetch. Provide fetchFn to override default behaviour."
+      );
+    }
+
+    if (!global.fetch) {
+      console.log(
+        "global.fetch is undefined. Please provide a fetch implementation."
+      );
+    }
+
+    this.request = makeRequest(endpoint + "/sql", fetchFn);
   }
 
   query = async <Data>(sql: string) => {

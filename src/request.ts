@@ -1,9 +1,15 @@
 import { models } from "./validation";
 
 export const makeRequest =
-  (url: string) =>
+  (
+    url: string,
+    fetchFn?: (
+      input: RequestInfo | URL,
+      init?: RequestInit | undefined
+    ) => Promise<Response>
+  ) =>
   async <Data>(body: typeof models.SqlQueryRequest._type) => {
-    const fetch = global.fetch ?? (await import("node-fetch")).default;
+    const fetch = fetchFn ?? global.fetch;
 
     const response = await fetch(url, {
       method: "POST",
