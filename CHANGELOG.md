@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.8](https://github.com/polyscale/serverless-js/compare/v0.0.7...v0.0.8) (2023-05-12)
+
+
+### Bug Fixes
+
+* test and build externals ([0db6651](https://github.com/polyscale/serverless-js/commit/0db6651d6585d4addea0f6b786ab2dd39f9ae016))
+
 ### [0.0.7](https://github.com/polyscale/serverless-js/compare/v0.0.6...v0.0.7) (2023-05-12)
 
 
