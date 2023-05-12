@@ -12,6 +12,6 @@
     "deploy": "wrangler publish"
   },
   "dependencies": {
-    "@polyscale/serverless-js": "^1.0.0"
+    "@polyscale/serverless-js": "^1.0.2"
   }
 }
