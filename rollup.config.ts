@@ -5,7 +5,7 @@ import typescript from "@rollup/plugin-typescript";
 export default defineConfig({
   input: "src/main.ts",
   plugins: [typescript()],
-  external: ["node-fetch", "zod"],
+  external: ["zod"],
   output: [
     {
       format: "cjs",

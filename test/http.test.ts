@@ -1,10 +1,4 @@
 import { Client, models } from "../src/main";
-import fetch from "node-fetch";
-
-jest.mock("node-fetch", () => ({
-  __esModule: true,
-  default: jest.fn(() => new Response(JSON.stringify({}))),
-}));
 
 const TARGET_URL = "https://example.com";
 const CONFIG = {
@@ -14,6 +8,16 @@ const CONFIG = {
   database: "some-database",
   provider: "mysql" as (typeof models.SqlQueryRequest._type)["provider"],
 };
+
+const originalFetch = global.fetch;
+
+(global.fetch as any) = jest.fn(() => ({
+  json: jest.fn(),
+}));
+
+afterAll(() => {
+  global.fetch = originalFetch;
+});
 
 test("@polyscale/serverless-js", async () => {
   const client = new Client(TARGET_URL, CONFIG);
