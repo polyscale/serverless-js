@@ -44,3 +44,7 @@ const polyscale = new Client("https://serverless.aws.psedge.global", {
 
 polyscale.query("SELECT 1;").then(result => console.log(result))
 ```
+
+## Examples
+
+* [Cloudflare Worker](./examples/cloudflare-worker/README.md)
