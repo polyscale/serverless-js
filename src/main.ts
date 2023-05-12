@@ -17,12 +17,14 @@ export class Client {
   ) {
     if (!fetchFn) {
       console.log(
-        "Defaulting to use global.fetch. Provide fetchFn to override default behaviour."
+        "Defaulting to use fetch. Provide fetchFn to override default behaviour."
       );
     }
 
-    if (!fetch) {
-      console.log("fetch is undefined. Please provide a fetch implementation.");
+    if (!fetch && !fetchFn) {
+      throw new Error(
+        "fetch is undefined. Please provide a fetch implementation."
+      );
     }
 
     this.request = makeRequest(endpoint + "/sql", fetchFn);
