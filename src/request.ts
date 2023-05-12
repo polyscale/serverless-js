@@ -1,9 +1,10 @@
-import fetch from "node-fetch";
 import { models } from "./validation";
 
 export const makeRequest =
   (url: string) =>
   async <Data>(body: typeof models.SqlQueryRequest._type) => {
+    const { default: fetch } = await import("node-fetch");
+
     const response = await fetch(url, {
       method: "POST",
       headers: {
