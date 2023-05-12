@@ -9,12 +9,12 @@
   "files": [
     "dist"
   ],
-  "main": "dist/serverless-js.umd.cjs",
-  "module": "dist/serverless-js.js",
+  "main": "dist/serverless-js.cjs",
+  "module": "dist/serverless-js.mjs",
   "exports": {
     ".": {
-      "import": "./dist/serverless-js.js",
-      "require": "./dist/serverless-js.umd.cjs"
+      "import": "./dist/serverless-js.mjs",
+      "require": "./dist/serverless-js.cjs"
     }
   },
   "types": "dist/serverless-js.d.ts",

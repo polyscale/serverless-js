@@ -9,11 +9,11 @@ export default defineConfig({
   output: [
     {
       format: "cjs",
-      file: "dist/serverless-js.cjs.js",
+      file: "dist/serverless-js.cjs",
     },
     {
       format: "esm",
-      file: "dist/serverless-js.js",
+      file: "dist/serverless-js.mjs",
     },
   ],
 });
