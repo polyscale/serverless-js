@@ -1,17 +1,9 @@
 import { models } from "./validation";
 
 export const makeRequest =
-  (
-    url: string,
-    fetchFn?: (
-      input: RequestInfo | URL,
-      init?: RequestInit | undefined
-    ) => Promise<Response>
-  ) =>
+  (url: string, fetchFn: typeof fetch) =>
   async <Data>(body: typeof models.SqlQueryRequest._type) => {
-    const req = fetchFn ?? fetch;
-
-    const response = await req(url, {
+    const response = await fetchFn(url, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
