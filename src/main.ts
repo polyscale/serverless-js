@@ -21,10 +21,8 @@ export class Client {
       );
     }
 
-    if (!global.fetch) {
-      console.log(
-        "global.fetch is undefined. Please provide a fetch implementation."
-      );
+    if (!fetch) {
+      console.log("fetch is undefined. Please provide a fetch implementation.");
     }
 
     this.request = makeRequest(endpoint + "/sql", fetchFn);

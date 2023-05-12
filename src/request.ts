@@ -9,9 +9,9 @@ export const makeRequest =
     ) => Promise<Response>
   ) =>
   async <Data>(body: typeof models.SqlQueryRequest._type) => {
-    const fetch = fetchFn ?? global.fetch;
+    const req = fetchFn ?? fetch;
 
-    const response = await fetch(url, {
+    const response = await req(url, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
