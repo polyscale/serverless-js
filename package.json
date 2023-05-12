@@ -7,9 +7,7 @@
     "url": "git+https://github.com/polyscale/serverless-js.git"
   },
   "files": [
-    "dist/serverless-js.cjs",
-    "dist/serverless-js.mjs",
-    "dist/src"
+    "dist"
   ],
   "main": "dist/serverless-js.cjs",
   "module": "dist/serverless-js.mjs",
