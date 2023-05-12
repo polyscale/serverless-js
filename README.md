@@ -47,4 +47,4 @@ polyscale.query("SELECT 1;").then(result => console.log(result))
 
 ## Examples
 
-* [Cloudflare Worker](./examples/cloudflare-worker/README.md)
+* [Cloudflare Worker](./examples/cloudflare-worker/)
