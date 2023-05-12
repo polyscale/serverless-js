@@ -1,5 +1,10 @@
 # PolyScale Serverless Client
 
+![npm (scoped)](https://img.shields.io/npm/v/@polyscale/serverless-js?color=%23b03348)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/polyscale/serverless-js/publish.yml)
+![GitHub](https://img.shields.io/github/license/polyscale/serverless-js)
+![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@polyscale/serverless-js)
+
 `Serverless-js` is a lightweight, Fetch API based HTTP client designed for executing SQL over HTTP with PolyScale.ai. `Serverless-js` is intended for use in serverless environments where TCP based database connections are unavailable e.g. Vercel and Cloudflare Workers.
 
 ## Install
