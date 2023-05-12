@@ -16,10 +16,11 @@
   "exports": {
     ".": {
       "import": "./dist/serverless-js.mjs",
-      "require": "./dist/serverless-js.cjs"
+      "require": "./dist/serverless-js.cjs",
+      "types": "./dist/src/main.d.ts"
     }
   },
-  "types": "dist/src/main.d.ts",
+  "types": "./dist/serverless-js.d.mts",
   "scripts": {
     "dev": "nodemon",
     "build": "rollup --config --configPlugin typescript",
@@ -43,6 +44,7 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^2.8.8",
     "rollup": "^3.21.6",
+    "rollup-plugin-ts": "^3.2.0",
     "ts-jest": "^29.1.0"
   },
   "dependencies": {
