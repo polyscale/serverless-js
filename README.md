@@ -48,3 +48,4 @@ polyscale.query("SELECT 1;").then(result => console.log(result))
 ## Examples
 
 * [Cloudflare Worker](./examples/cloudflare-worker/)
+* [Vercel Edge Functions](./examples/vercel-next/)
