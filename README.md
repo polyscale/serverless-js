@@ -17,7 +17,7 @@ npm install @polyscale/serverless-js
 
 TypeScript/ESM:
 ```typescript
-import Client from "@polyscale/serverless-js";
+import {Client} from "@polyscale/serverless-js";
 
 const polyscale = new Client("https://serverless.aws.psedge.global", {
     cacheId: "polyscale-cache-id",
@@ -32,7 +32,7 @@ polyscale.query("SELECT 1;").then(result => console.log(result))
 
 Commonjs: 
 ```javascript
-const Client = require("@polyscale/serverless-js");
+const {Client} = require("@polyscale/serverless-js");
 
 const polyscale = new Client("https://serverless.aws.psedge.global", {
     cacheId: "polyscale-cache-id",
