@@ -19,7 +19,7 @@
       "require": "./dist/serverless-js.cjs"
     }
   },
-  "types": "dist/serverless-js.d.ts",
+  "types": "dist/src/main.d.ts",
   "scripts": {
     "dev": "nodemon",
     "build": "rollup --config --configPlugin typescript",
