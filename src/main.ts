@@ -24,5 +24,3 @@ export class Client {
 }
 
 export * from "./validation";
-
-export default Client;

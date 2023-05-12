@@ -1,7 +1,7 @@
-import Client, { models } from "../src/main";
-import fetch from "cross-fetch";
+import { Client, models } from "../src/main";
+import fetch from "node-fetch";
 
-jest.mock("cross-fetch", () => ({
+jest.mock("node-fetch", () => ({
   __esModule: true,
   default: jest.fn(() => new Response(JSON.stringify({}))),
 }));

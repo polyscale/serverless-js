@@ -1,4 +1,4 @@
-import fetch from "cross-fetch";
+import fetch from "node-fetch";
 import { models } from "./validation";
 
 export const makeRequest =
