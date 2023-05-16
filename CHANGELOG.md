@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/polyscale/serverless-js/compare/v1.0.2...v1.1.0) (2023-05-16)
+
+
+### Features
+
+* rm ssl option ([f4f0f70](https://github.com/polyscale/serverless-js/commit/f4f0f70147aefb57c61764ec81458264c04234f2))
+
 ### [1.0.2](https://github.com/polyscale/serverless-js/compare/v1.0.1...v1.0.2) (2023-05-12)
 
 
