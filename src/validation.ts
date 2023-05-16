@@ -7,7 +7,6 @@ const SqlQueryRequest = z.object({
   sql: z.string().min(1),
   provider: z.enum(["postgres", "mysql", "mariadb", "mssql"]),
   database: z.string().min(1),
-  ssl: z.boolean().optional(),
 });
 
 export type SqlQueryRequest = typeof SqlQueryRequest._type;
