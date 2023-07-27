@@ -26,6 +26,7 @@
     "test": "run-s test:types test:unit",
     "test:types": "tsc --noEmit",
     "test:unit": "jest -c ./jest.config.cjs",
+    "test:unit:watch": "jest --watch -c ./jest.config.cjs",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {

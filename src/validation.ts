@@ -1,10 +1,23 @@
 import { z } from "zod";
 
+const BindingValue = z.union([
+  z.string(),
+  z.number(),
+  z.boolean(),
+  z.null(),
+  z.array(z.string()),
+  z.array(z.number()),
+  z.array(z.boolean()),
+]);
+
+export type BindingValue = typeof BindingValue._type;
+
 const SqlQueryRequest = z.object({
   cacheId: z.string().min(1),
   username: z.string().min(1),
   password: z.string().min(1),
   sql: z.string().min(1),
+  bindings: z.record(BindingValue).or(z.array(BindingValue)).optional(),
   provider: z.enum(["postgres", "mysql", "mariadb", "mssql"]),
   database: z.string().min(1),
 });
