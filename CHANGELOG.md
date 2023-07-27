@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0-beta.0](https://github.com/polyscale/serverless-js/compare/v1.1.0...v1.2.0-beta.0) (2023-07-27)
+
+
+### Features
+
+* allow passing query bindings ([acfbe80](https://github.com/polyscale/serverless-js/commit/acfbe806c523019df3b82a0607bf7a3542feb91c))
+
 ## [1.1.0](https://github.com/polyscale/serverless-js/compare/v1.0.2...v1.1.0) (2023-05-16)
 
 
