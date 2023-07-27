@@ -45,6 +45,25 @@ const polyscale = new Client("https://serverless.aws.psedge.global", {
 polyscale.query("SELECT 1;").then(result => console.log(result))
 ```
 
+## Parameter Bindings
+
+See [knex documentation](https://knexjs.org/guide/raw.html#raw-parameter-binding) for more information.
+
+```typescript
+import {Client} from "@polyscale/serverless-js";
+
+const polyscale = new Client("https://serverless.aws.psedge.global", {
+    cacheId: "polyscale-cache-id",
+    username: "target-db-username",
+    password: "target-db-password",
+    database: "target-db-database",
+    provider: "mysql",
+});
+
+polyscale.query("SELECT * FROM user WHERE name = ?;", ["Peter"]).then(result => console.log(result))
+polyscale.query("SELECT * FROM user WHERE name = :name;", {name: "Peter"}).then(result => console.log(result))
+```
+
 ## Examples
 
 * [Cloudflare Worker](./examples/cloudflare-worker/)
