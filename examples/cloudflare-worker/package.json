@@ -10,8 +10,5 @@
   "scripts": {
     "start": "wrangler dev",
     "deploy": "wrangler publish"
-  },
-  "dependencies": {
-    "@polyscale/serverless-js": "^1.0.2"
   }
 }
