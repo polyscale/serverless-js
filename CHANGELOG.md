@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0-beta.1](https://github.com/polyscale/serverless-js/compare/v1.2.0-beta.0...v1.2.0-beta.1) (2023-07-28)
+
+
+### Features
+
+* drop provider property ([61a80bb](https://github.com/polyscale/serverless-js/commit/61a80bbe419259a37ee79dca43e38d48824c7d3d))
+
 ## [1.2.0-beta.0](https://github.com/polyscale/serverless-js/compare/v1.1.0...v1.2.0-beta.0) (2023-07-27)
 
 
