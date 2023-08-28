@@ -15,9 +15,23 @@ npm install @polyscale/serverless-js
 
 ## Usage
 
-TypeScript/ESM:
+**TypeScript/ESM:**
 ```typescript
 import {Client} from "@polyscale/serverless-js";
+
+const polyscale = new Client("https://serverless.aws.psedge.global", {
+    cacheId: "polyscale-cache-id",
+    username: "target-db-username",
+    password: "target-db-password",
+    database: "target-db-database",
+});
+
+polyscale.query("SELECT 1;").then(result => console.log(result))
+```
+
+**Deno:**
+```typescript
+import {Client} from "npm:@polyscale/serverless-js";
 
 const polyscale = new Client("https://serverless.aws.psedge.global", {
     cacheId: "polyscale-cache-id",
