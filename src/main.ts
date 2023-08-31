@@ -8,7 +8,7 @@ export class Client {
     endpoint: string,
     private connection: Pick<
       SqlQueryRequest,
-      "cacheId" | "username" | "password" | "database"
+      "cacheId" | "username" | "password" | "database" | "provider"
     >,
     fetchFn = fetch
   ) {

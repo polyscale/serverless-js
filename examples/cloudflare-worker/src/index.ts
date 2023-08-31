@@ -15,6 +15,7 @@ const polyscale = new Client("https://serverless.aws.polyscale.global", {
   username: "USERNAME",
   password: "PASSWORD",
   database: "DATABASE",
+  provider: "mysql",
 });
 
 export default {

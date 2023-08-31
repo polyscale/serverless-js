@@ -18,6 +18,7 @@ const SqlQueryRequest = z.object({
   password: z.string().min(1),
   sql: z.string().min(1),
   bindings: z.record(BindingValue).or(z.array(BindingValue)).optional(),
+  provider: z.enum(["postgres", "mysql", "mariadb", "mssql"]),
   database: z.string().min(1),
 });
 
