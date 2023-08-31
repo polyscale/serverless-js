@@ -39,6 +39,7 @@ const polyscale = new Client("https://serverless.aws.psedge.global", {
     username: "target-db-username",
     password: "target-db-password",
     database: "target-db-database",
+    provider: "mysql",
 });
 
 polyscale.query("SELECT 1;").then(result => console.log(result))
