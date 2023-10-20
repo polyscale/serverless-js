@@ -4,7 +4,7 @@ export const config = {
   runtime: "edge",
 };
 
-import { Client } from "../../../../../src/main";
+import { Client } from "@polyscale/serverless-js";
 
 const polyscale = new Client("https://serverless.aws.polyscale.global", {
   cacheId: "CACHE_ID",
